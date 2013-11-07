@@ -9,42 +9,41 @@ angular.module('vedicApp', ['ui.event'])
             }).when('/demo',{
                 templateUrl:'views/Demo/demo.html',
                 controller: 'DemoCtrl'
-            }).when('/AboutScholar',{
-                templateUrl:'views/Partial/AboutScholar.html',
-                controller: 'PartialCtrl'
+            }).when('/aboutScholar',{
+                templateUrl:'views/Partials/aboutScholar.html',
+                controller: 'PartialsCtrl'
             }).when('/BasisOfVedicLiterature',{
-                templateUrl:'views/Partial/BasisOfVedicLiterature.html',
-                controller: 'PartialCtrl'
+                templateUrl:'views/Partials/BasisOfVedicLiterature.html',
+                controller: 'PartialsCtrl'
             }).when('/feedback',{
-                templateUrl:'views/Partial/feedback.html',
-                controller: 'PartialCtrl'
+                templateUrl:'views/Partials/feedback.html',
+                controller: 'PartialsCtrl'
             }).when('/fermats',{
-                templateUrl:'views/Partial/Fermats.html',
-                controller: 'PartialCtrl'
+                templateUrl:'views/Partials/Fermats.html',
+                controller: 'PartialsCtrl'
             }).when('/ganitsutras',{
-                templateUrl:'views/Partial/ganitsutras.html',
-                controller: 'PartialCtrl'
+                templateUrl:'views/Partials/ganitsutras.html',
+                controller: 'PartialsCtrl'
             }).when('/glimpses',{
-                templateUrl:'views/Partial/glimpses.html',
-                controller: 'PartialCtrl'
+                templateUrl:'views/Partials/Glimpses.html'
             }).when('/goldbachs',{
-                templateUrl:'views/Partial/goldbachs.html',
-                controller: 'PartialCtrl'
+                templateUrl:'views/Partials/goldbachs.html',
+                controller: 'PartialsCtrl'
             }).when('/publishedbooks',{
-                templateUrl:'views/Partial/publishedbooks.html',
-                controller: 'PartialCtrl'
+                templateUrl:'views/Partials/publishedbooks.html',
+                controller: 'PartialsCtrl'
             }).when('/scriptures',{
-                templateUrl:'views/Partial/scriptures.html',
-                controller: 'PartialCtrl'
+                templateUrl:'views/Partials/scriptures.html',
+                controller: 'PartialsCtrl'
             }).when('/timeandspace',{
-                templateUrl:'views/Partial/timeandspace.html',
-                controller: 'PartialCtrl'
+                templateUrl:'views/Partials/timeandspace.html',
+                controller: 'PartialsCtrl'
             }).when('/vedicmathematicslinks',{
-                templateUrl:'views/Partial/vedicmathematicslinks.html',
-                controller: 'PartialCtrl'
+                templateUrl:'views/Partials/vedicmathematicslinks.html',
+                controller: 'PartialsCtrl'
             }).when('/vmanswers',{
-                templateUrl:'views/Partial/vmanswers.html',
-                controller: 'PartialCtrl'
+                templateUrl:'views/Partials/vmanswers.html',
+                controller: 'PartialsCtrl'
             })
             .otherwise({
                 redirectTo: '/'
