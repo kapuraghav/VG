@@ -4,7 +4,7 @@ angular.module('vedicApp', ['ui.event'])
     .config(function ($routeProvider) {
         $routeProvider
              .when('/', {
-                templateUrl: '/views/main.html'
+                templateUrl: '/views/mains.html'
             }).when('/demo',{
                 templateUrl:'views/Demo/demo.html',
                 controller: 'DemoCtrl'
@@ -22,7 +22,6 @@ angular.module('vedicApp', ['ui.event'])
                 controller: 'PartialsCtrl'
             }).when('/ganitsutras',{
                 templateUrl:'views/Partials/ganitsutras.html',
-                controller: 'PartialsCtrl'
             }).when('/glimpses',{
                 templateUrl:'views/Partials/Glimpses.html'
             }).when('/goldbachs',{

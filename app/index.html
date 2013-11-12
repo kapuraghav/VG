@@ -6,14 +6,15 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Vedic Mathematics</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <!-- build:css(.tmp) styles/main.css -->
-        <link rel="stylesheet" href="styles/bootstrap.css">
-        <link rel="stylesheet" href="styles/main.css">
+      <link href="../styles/bootstrap.css" rel="stylesheet">
+      <link href="../styles/bootstrap-responsive.css" rel="stylesheet">
+      <link rel="stylesheet" href="../styles/main.css">
         <!-- endbuild -->
 </head>
   <body ng-app="vedicApp">
@@ -22,12 +23,72 @@
     <![endif]-->
 
     <!--[if lt IE 9]>
-      <script src="bower_components/es5-shim/es5-shim.js"></script>
-      <script src="bower_components/json3/lib/json3.min.js"></script>
+      <script src="../bower_components/es5-shim/es5-shim.js"></script>
+      <script src="../bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div ng-view=""></div>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="brand" href="#">Vedic Mathematics</a>
+
+                <div class="nav-collapse collapse">
+                    <p class="navbar-text pull-right">
+                        Logged in as <a href="#" class="navbar-link">Username</a>
+                    </p>
+                    <ul class="nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span3">
+                <div class="well sidebar-nav">
+                    <ul class="nav nav-list">
+                        <li class="nav-header">Sidebar</li>
+                        <li class="active"><a href="#">Why Vedic Mathematics?</a></li>
+                        <li><a href="#/glimpses">Glimpses of Vedic Mahematics</a></li>
+                        <li><a href="#/ganitsutras">Ganit Sutras</a></li>
+                        <li><a href="#">Multidimension of time and space in Mansara</a></li>
+                        <li class="nav-header">Sidebar</li>
+                        <li><a href="#">Vedic Mathematics Links</a></li>
+                        <li><a href="#">Fermat's Last Theorem: Its Proofs</a></li>
+                        <li><a href="#">Scriptures Formats</a></li>
+                        <li><a href="#">Goldbach's Conjecture:Its Proof</a></li>
+                        <li><a href="#">Vedic Mathematics Answers</a></li>
+                        <li><a href="#">Transcendental Basis of Vedic Literature</a></li>
+                        <li class="nav-header">Sidebar</li>
+                        <li><a href="#">Published Books</a></li>
+                        <li><a href="#">About the Scholar</a></li>
+                        <li><a href="#">Feed back</a></li>
+                        <li><a href="#">VM Courses</a></li>
+                        <li><a href="#">VM Courses 2013(new)</a></li>
+                        <li><a href="#">VMST Course</a></li>
+                    </ul>
+                </div>
+                <!--/.well -->
+            </div>
+            <!--/span-->
+            <div class="span9">
+                <div ng-view=""></div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; Cosmic Kapoors 2013</p>
+        </footer>
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
