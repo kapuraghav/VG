@@ -52,15 +52,15 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div ng-controller="MainCtrl" class="container-fluid">
         <div class="row-fluid">
             <div class="span3">
                 <div class="well sidebar-nav">
                     <ul class="nav nav-list">
                         <li class="nav-header">Sidebar</li>
-                        <li class="active"><a href="#">Why Vedic Mathematics?</a></li>
-                        <li><a href="#/glimpses">Glimpses of Vedic Mahematics</a></li>
-                        <li><a href="#/ganitsutras">Ganit Sutras</a></li>
+                        <li class=""><a href="#">Why Vedic Mathematics?</a></li>
+                        <li ng-class="getClass('/glimpses')"><a href="#/glimpses">Glimpses of Vedic Mahematics</a></li>
+                        <li ng-class="getClass('/ganitsutras')"><a href="#/ganitsutras">Ganit Sutras</a></li>
                         <li><a href="#">Multidimension of time and space in Mansara</a></li>
                         <li class="nav-header">Sidebar</li>
                         <li><a href="#">Vedic Mathematics Links</a></li>
