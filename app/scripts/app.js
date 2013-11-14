@@ -10,7 +10,7 @@ angular.module('vedicApp', ['ui.event'])
                 controller: 'DemoCtrl'
             }).when('/aboutScholar',{
                 templateUrl:'views/Partials/aboutScholar.html',
-                controller: 'PartialsCtrl'
+               // controller: 'PartialsCtrl'
             }).when('/BasisOfVedicLiterature',{
                 templateUrl:'views/Partials/BasisOfVedicLiterature.html',
                 controller: 'PartialsCtrl'
@@ -19,26 +19,26 @@ angular.module('vedicApp', ['ui.event'])
                 controller: 'PartialsCtrl'
             }).when('/fermats',{
                 templateUrl:'views/Partials/Fermats.html',
-                controller: 'PartialsCtrl'
+               // controller: 'PartialsCtrl'
             }).when('/ganitsutras',{
                 templateUrl:'views/Partials/ganitsutras.html',
             }).when('/glimpses',{
                 templateUrl:'views/Partials/Glimpses.html'
             }).when('/goldbachs',{
                 templateUrl:'views/Partials/goldbachs.html',
-                controller: 'PartialsCtrl'
+                //controller: 'PartialsCtrl'
             }).when('/publishedbooks',{
                 templateUrl:'views/Partials/publishedbooks.html',
                 controller: 'PartialsCtrl'
             }).when('/scriptures',{
                 templateUrl:'views/Partials/scriptures.html',
-                controller: 'PartialsCtrl'
+                //controller: 'PartialsCtrl'
             }).when('/timeandspace',{
                 templateUrl:'views/Partials/timeandspace.html',
                 controller: 'PartialsCtrl'
             }).when('/vedicmathematicslinks',{
                 templateUrl:'views/Partials/vedicmathematicslinks.html',
-                controller: 'PartialsCtrl'
+               // controller: 'PartialsCtrl'
             }).when('/vmanswers',{
                 templateUrl:'views/Partials/vmanswers.html',
                 controller: 'PartialsCtrl'
