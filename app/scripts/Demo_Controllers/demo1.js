@@ -1,18 +1,24 @@
-//$("btn").focus();
-//angular.element("#myinput").focus();
-//angular.element( document.querySelector( '#myinput' )).focus();
-angular.module('vedicApp').controller('DemoCtrl', function ($scope){
-    angular.element("#myinput").focus();
-    $scope.awesomeThings = [
-        'HTML5 Boilerplate',
-        'AngularJS',
-        'Karma'
+var AccordionDemoCtrl;
+angular.module('vedicApp').controller(AccordionDemoCtrl);
+
+function AccordionDemoCtrl($scope) {
+    $scope.oneAtATime = true;
+
+    $scope.groups = [
+        {
+            title: "Dynamic Group Header - 1",
+            content: "Dynamic Group Body - 1"
+        },
+        {
+            title: "Dynamic Group Header - 2",
+            content: "Dynamic Group Body - 2"
+        }
     ];
-    $scope.blurCallback = function () {
-        console.log("Working");
-        //alert('Goodbye');
+
+    $scope.items = ['Item 1', 'Item 2', 'Item 3'];
+
+    $scope.addItem = function() {
+        var newItemNo = $scope.items.length + 1;
+        $scope.items.push('Item ' + newItemNo);
     };
-    $scope.myfocus = function(){
-        angular.element("#myinput").focus();
-    };
-});
+}
