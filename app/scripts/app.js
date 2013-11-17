@@ -1,13 +1,13 @@
 'use strict';
 
-angular.module('vedicApp',['ui.event','ui.bootstrap'])
+angular.module('vedicApp',['ui.bootstrap'])
     .config(function ($routeProvider) {
         $routeProvider
              .when('/', {
                 templateUrl: '/views/mains.html'
             }).when('/demo',{
                 templateUrl:'views/Demo/demo.html',
-                //controller: 'DatepickerDemoCtrl'
+                controller: 'AccordionDemoCtrl'
             }).when('/aboutScholar',{
                 templateUrl:'views/Partials/aboutScholar.html',
                // controller: 'PartialsCtrl'
